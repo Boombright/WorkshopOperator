@@ -1,0 +1,87 @@
+int password;
+           string organization;
+
+            /*string CIA, FBI, NSA;
+             CIA = true;
+             FBI = true;
+             NSA = true;*/
+
+            Console.Write("Password: ");
+            password = int.Parse(Console.ReadLine());
+
+            Console.Write("Organization: ");
+            organization = Console.ReadLine();
+
+            {
+                if (organization != "CIA")
+                    if (organization != "FBI")
+                        if (organization != "NSA")
+                            Console.WriteLine("incorrect organization or password");
+                Console.ReadLine();
+            }
+
+
+            double password_6 = password / 100000;
+            double password_5 = (password / 10000) % 10;
+            double password_4 = (password / 1000) % 10;
+            double password_3 = (password / 100) % 10;
+            double password_2 = (password / 10) % 10;
+            double password_1 = password % 10;
+
+            {
+                if (password_1 % 3 == 0)
+
+                    if (password_2 != 1)
+                        if (password_2 != 3)
+                            if (password_2 != 5)
+
+                                if (password_4 <= 6)
+                                    if (password_4 != 8)
+
+                                        Console.WriteLine("Welcome to US secret DataBase, CIA agent");
+
+                                    else
+                                        Console.WriteLine("incorrect organization");
+            }
+
+            {
+                if (password_6 >= 4)
+                    if (password_6 <= 7)
+                        
+                if (password_3 % 2 == 0)
+                    if (password_3 != 6)
+                        
+                if (password_5 == 1)
+                    if (password_5 == 3)
+                        if (password_5 == 5)
+                            if (password_5 == 7)
+                                if (password_5 == 9)
+                                    
+                                    Console.WriteLine("Welcome to US secret DataBase, FBI agent");
+                                                else
+                                                    Console.WriteLine("incorrect organization");
+            }
+
+            {
+                if (password_1 == 1)
+                    if (password_1 == 3)
+                        if (password_1 == 5)
+                            if (password_1 == 6)
+                                if (password_1 == 10)
+                                    if (password_1 == 15)
+                                        if (password_1 == 30)
+                                            
+                if (password_3 % 3 == 0)
+                    if (password_3 % 2 >= 1)
+                       
+                if (password_1 == 7)
+                    if (password_2 == 7)
+                        if (password_3 == 7)
+                            if (password_4 == 7)
+                                if (password_5 == 7)
+                                    if (password_6 == 7)
+                                       
+                Console.WriteLine("Welcome to US secret DataBase, NSA agent");
+                                                                        else
+                                                                            Console.WriteLine("incorrect organization");
+            }
